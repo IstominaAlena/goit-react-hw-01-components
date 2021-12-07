@@ -1,0 +1,69 @@
+.description {
+  position: relative;
+  text-align: center;
+}
+
+.avatar {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 50% 50%;
+  background-color: #ffffff;
+}
+
+.name {
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.tag {
+  margin-bottom: 5px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.location {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.location::after {
+  position: absolute;
+  content: '';
+
+  right: 47px;
+  bottom: 0px;
+  width: 80%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: gray;
+}

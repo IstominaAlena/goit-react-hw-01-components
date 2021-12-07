@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-// import styles from './TableBody.module.css';
+import styles from './TableBody.module.css';
 
 import TableItem from '../TableItem';
 
 const TableBody = ({ data }) => {
   const elements = data.map(item => <TableItem key={item.id} {...item} />);
 
-  return <tbody>{elements}</tbody>;
+  return <tbody className={styles.body}>{elements}</tbody>;
 };
 
 export default TableBody;

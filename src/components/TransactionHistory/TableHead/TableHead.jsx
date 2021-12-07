@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
-// import styles from './TableHead.module.css';
+import styles from './TableHead.module.css';
+
 const TableHead = () => {
   return (
     <thead>
       <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
+        <th className={styles.name}>Type</th>
+        <th className={styles.name}>Amount</th>
+        <th className={styles.name}>Currency</th>
       </tr>
     </thead>
   );
