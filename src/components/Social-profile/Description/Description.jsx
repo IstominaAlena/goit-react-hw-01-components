@@ -15,7 +15,7 @@ const Description = ({ name, tag, location, avatar }) => {
 export default Description;
 
 Description.propTypes = {
-  username: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,

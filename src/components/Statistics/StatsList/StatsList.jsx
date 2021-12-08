@@ -10,5 +10,12 @@ const StatsList = ({ items }) => {
 export default StatsList;
 
 StatsList.propTypes = {
-  items: PropTypes.node.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      currency: PropTypes.string,
+      amount: PropTypes.string,
+      type: PropTypes.string,
+      id: PropTypes.string,
+    })
+  ).isRequired,
 };
