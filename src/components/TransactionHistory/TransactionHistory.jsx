@@ -17,10 +17,10 @@ export default TransactionHistory;
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      currency: PropTypes.string,
-      amount: PropTypes.string,
-      type: PropTypes.string,
-      id: PropTypes.string,
+      currency: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
