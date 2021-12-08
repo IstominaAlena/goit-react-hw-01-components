@@ -11,5 +11,12 @@ const TableBody = ({ data }) => {
 
 export default TableBody;
 TableBody.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      currency: PropTypes.string,
+      amount: PropTypes.string,
+      type: PropTypes.string,
+      id: PropTypes.string,
+    })
+  ),
 };
